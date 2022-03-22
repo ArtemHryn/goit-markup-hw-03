@@ -1,5 +1,16 @@
+:root {
+    --wrapper_footer_background_color: #2F303A;
+    --web_hover_button_color: #2196F3;
+    --main_color: #212121;
+    --white_color: #fff;
+    --mail_phone_desc: #757575;
+    --port_buttons_and_team_background: #F5F4FA;
+}
+
 body{
-    font-family: 'Roboto', 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: var(--main_color);
+    letter-spacing: 0.03em;
 }
 
 /*Header*/
@@ -16,7 +27,6 @@ body{
 
 .header-navigation-webstudio {
     text-decoration: none;
-    align-items: left;
     margin-left: 215px;
 }
 
@@ -25,7 +35,7 @@ body{
     font-weight: 700;
     font-size: 26px;
     line-height: 1.6;
-    color: #2196F3;
+    color: var(--web_hover_button_color);
     letter-spacing: 0.03em;
 }
 
@@ -44,6 +54,12 @@ body{
     flex-direction: row;
     list-style-type: none;
     text-indent: 50px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--main_color);
 }
 
 .header-contacts {
@@ -56,25 +72,36 @@ body{
 
 .navigation-list-item {
     text-decoration: none;
-    color: #212121;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--main_color);
 }
 
 .header-contact-item {
     text-decoration: none;
-    color: #757575;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--mail_phone_desc);
+
 }
 
 .navigation-list-item:hover,
 .navigation-list-item:focus,
 .header-contact-item:focus,
 .header-contact-item:hover {
-    color: #2196F3;
+    color: var(--web_hover_button_color);
 }
 
 /*wrapper*/
 
 .wrapper {
-    background-color: #2F303A;
+    background-color: var(--wrapper_footer_background_color);
     display: flex;
     align-items: center;
     text-align: center;
@@ -83,8 +110,7 @@ body{
 
 .wrapper-desc {
     width: 696px;
-    color: #fff;
-    font-family: 'Roboto';
+    color: var(--white_color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -94,7 +120,7 @@ body{
 }
 
 .wrapper-button {
-    background-color: #2196F3;
+    background-color: var(--web_hover_button_color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     width: 200px;
@@ -104,7 +130,7 @@ body{
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: var(--white_color);
     cursor: pointer;
 }
 
@@ -133,22 +159,17 @@ body{
 }
 
 .features-list-item-header {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #212121;
 }
 
 .features-list-item-desc {
-    font-family: 'Roboto';
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--mail_phone_desc);
 }
 
 /*чем мы занимаемся*/
@@ -160,13 +181,11 @@ body{
 }
 
 .services-header {
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
+
 }
 
 .services-list{
@@ -184,17 +203,14 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #F5F4FA;
+    background-color: var(--port_buttons_and_team_background);
 }
 
 .team-header {
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
 }
 
 .team-list {
@@ -204,35 +220,30 @@ body{
 }
 
 .team-list-item {
-    background: #FFFFFF;
+    background-color: var(--white_color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
 }
 
 .team-list-item-name {
-    font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
 }
 
 .team-list-item-position {
-    font-family: 'Roboto';
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
-    letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--mail_phone_desc);
 }
 
 /*footer*/
 .footer {
-    background-color: #2F303A;
+    background-color: var(--wrapper_footer_background_color);
 }
 
 .footer-webstudio {
@@ -246,11 +257,11 @@ body{
 }
 
 .footer-web {
-    color: #2196F3;
+    color: var(--web_hover_button_color);
 }
 
 .footer-studio {
-    color: #fff;
+    color: var(--white_color);
 }
 
 .footer-list {
@@ -258,41 +269,43 @@ body{
 }
 
 .footer-list-address {
-    font-family: 'Roboto';
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--white_color);
 }
 
 .footer-address-location{
     text-decoration: none;
-    font-family: 'Roboto';
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--white_color);
+    font-style: normal;
 }
 
 .footer-mail, .footer-phone {
     text-decoration: none;
-    font-family: 'Roboto';
     font-size: 14px;
     line-height: 1.71;
     /* or 171% */
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
 }
 
 .footer-address-location:hover,
 .footer-address-location:focus,
 .footer-mail:hover, .footer-phone:hover,
 .footer-mail:focus, .footer-phone:focus{
-    color: #2196F3;
+    color: var(--web_hover_button_color);
 }
 
 /* ПОРТФОЛИО */
 /* Кнопки */
+.divide-line {
+    border: 1px solid #ECECEC
+}
 .portfolio {
     display: flex;
     flex-direction: column;
@@ -321,18 +334,18 @@ body{
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
-    background-color: #F5F4FA;
+    color: var(--main_color);
+    background-color: var(--port_buttons_and_team_background);
     border-radius: 4px;
-    border-color: #F5F4FA;
+    border-color: var(--port_buttons_and_team_background);
     cursor: pointer;
 }
 
 .button-list-item-click:hover,
-.button-list-item-click:active {
-    color: #fff;
-    background-color: #2196F3;
-    border-color: #2196F3;
+.button-list-item-click:focus {
+    color: var(--white_color);
+    background-color: var(--web_hover_button_color);
+    border-color: var(--web_hover_button_color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
@@ -358,15 +371,13 @@ body{
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: #212121;
+    color: var(--main_color);
 }
 
 .card-list-item-type {
     font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--mail_phone_desc);
 }
