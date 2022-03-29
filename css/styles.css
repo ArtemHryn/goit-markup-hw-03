@@ -35,6 +35,8 @@ h1, h2, h3, h4, h5, h6, p {
 
 ul {
     list-style-type: none;
+    padding-left: 0;
+	margin: 0;
 }
 
 .container {
@@ -44,7 +46,7 @@ ul {
 /*Header*/
 .header {
     display: flex;
-    text-align: center;
+    justify-content: space-around;
 }
 .header-navigation {
     display: flex;
@@ -55,7 +57,7 @@ ul {
 
 .header-navigation-webstudio {
     text-decoration: none;
-    margin-left: 215px;
+
 }
 
 .header-navigation-web {
@@ -86,13 +88,6 @@ ul {
     color: var(--main_color);
 }
 
-.header-contacts {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    text-indent: 50px;
-}
-
 .navigation-list-item {
     text-decoration: none;
     font-family: 'Roboto';
@@ -103,6 +98,12 @@ ul {
     color: var(--main_color);
 }
 
+.header-contacts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .header-contact-item {
     text-decoration: none;
     font-family: 'Roboto';
@@ -111,7 +112,9 @@ ul {
     line-height: 16px;
     letter-spacing: 0.02em;
     color: var(--mail_phone_desc);
-
+}
+.header-contact-item:last-child{
+    margin-left: 30px;
 }
 
 .navigation-list-item:hover,
@@ -121,7 +124,16 @@ ul {
     color: var(--web_hover_button_color);
 }
 
+
+/* main part*/
+
+.section{
+    padding: 94px 0;
+}
+
 /*wrapper*/
+
+
 
 .wrapper {
     background-color: var(--wrapper_footer_background_color);
@@ -155,6 +167,7 @@ ul {
     letter-spacing: 0.06em;
     color: var(--white_color);
     cursor: pointer;
+    margin-top: 30px;
 }
 
 /*Особенности*/
@@ -198,7 +211,6 @@ ul {
 .services {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .services-header {
@@ -212,6 +224,7 @@ ul {
 .services-list{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 /*команда*/
@@ -219,7 +232,6 @@ ul {
 .team {
     display: flex;
     flex-direction: column;
-    align-items: center;
     background-color: var(--port_buttons_and_team_background);
 }
 
@@ -232,14 +244,13 @@ ul {
 
 .team-list {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
 }
 
 .team-list-item {
     background-color: var(--white_color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-
 }
 
 .team-list-item-name {
