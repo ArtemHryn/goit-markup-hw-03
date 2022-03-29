@@ -9,12 +9,36 @@
     --divide_line_color: #ececec;
 }
 
+html {
+	box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     color: var(--main_color);
     letter-spacing: 0.03em;
     font-size: 14px;
-    margin: auto;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0 auto;
+} 
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    width: 1200px;
 }
 
 /*Header*/
@@ -56,7 +80,6 @@ body{
 .navigation-links {
     display: flex;
     flex-direction: row;
-    list-style-type: none;
     text-indent: 50px;
     line-height: 16px;
     letter-spacing: 0.02em;
@@ -66,7 +89,6 @@ body{
 .header-contacts {
     display: flex;
     flex-direction: row;
-    list-style-type: none;
     text-align: center;
     text-indent: 50px;
 }
@@ -151,7 +173,6 @@ body{
 .features-list {
     display: flex;
     flex-direction: row;
-    list-style-type: none;
 }
 
 .features-list-item {
@@ -193,10 +214,6 @@ body{
     flex-direction: row;
 }
 
-.services-list-item {
-    list-style-type: none;
-}
-
 /*команда*/
 
 .team {
@@ -216,7 +233,6 @@ body{
 .team-list {
     display: flex;
     align-items: center;
-    list-style-type: none;
 }
 
 .team-list-item {
@@ -262,10 +278,6 @@ body{
 
 .footer-studio {
     color: var(--white_color);
-}
-
-.footer-list {
-    list-style-type: none;
 }
 
 .footer-list-address {
@@ -318,8 +330,6 @@ body{
 .button-list {
     display: flex;
     flex-direction: row;
-    list-style-type: none;
-    
 }
 
 .button-list-item-click {
