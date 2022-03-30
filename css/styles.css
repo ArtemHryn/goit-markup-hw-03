@@ -24,9 +24,6 @@ body{
     letter-spacing: 0.03em;
     font-size: 14px;
     margin: 0;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -41,12 +38,13 @@ ul {
 
 .container {
     width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 /*Header*/
-.header {
+.header > .container {
     display: flex;
-    justify-content: space-around;
 }
 .header-navigation {
     display: flex;
@@ -86,6 +84,7 @@ ul {
     line-height: 16px;
     letter-spacing: 0.02em;
     color: var(--main_color);
+    margin-left: 93px;
 }
 
 .navigation-list-item {
@@ -98,10 +97,14 @@ ul {
     color: var(--main_color);
 }
 
+.navigation-list-item:not(:last-child) {
+    margin-right: 50px;
+}
+
 .header-contacts {
     display: flex;
-    flex-direction: row;
     align-items: center;
+    margin-left: auto;
 }
 
 .header-contact-item {
@@ -138,7 +141,6 @@ ul {
 .wrapper {
     background-color: var(--wrapper_footer_background_color);
     display: flex;
-    align-items: center;
     text-align: center;
     flex-direction: column;
 }
@@ -175,7 +177,6 @@ ul {
 .features{
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 
@@ -191,6 +192,9 @@ ul {
 .features-list-item {
     width: 270px;
     height: 101px;
+}
+.features-list-item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .features-list-item-header {
@@ -263,6 +267,7 @@ ul {
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
+    margin: 30px 0 10px 0;
 }
 
 .team-list-item-position {
@@ -271,12 +276,13 @@ ul {
     line-height: 1.18;
     text-align: center;
     color: var(--mail_phone_desc);
+    padding-bottom: 30px;
 }
 
 /*footer*/
 .footer {
     background-color: var(--wrapper_footer_background_color);
-    padding: 60px 0 60px 170px;
+    padding: 60px 0;
 }
 
 .footer-webstudio {
