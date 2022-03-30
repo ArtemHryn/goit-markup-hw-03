@@ -361,7 +361,6 @@ ul {
 .button-list {
     display: flex;
     margin: 0 auto 50px;
-    flex-wrap: wrap;
 }
 
 .button-list-item:not(:last-child) {
@@ -380,7 +379,6 @@ ul {
     border-radius: 4px;
     border-color: var(--port_buttons_and_team_background);
     cursor: pointer;
-    flex-basis: calc ((100% - 10px) / 2);
 }
 
 .button-list-item-click:hover,
