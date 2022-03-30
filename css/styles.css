@@ -7,6 +7,7 @@
     --port_buttons_and_team_background: #F5F4FA;
     --black_color: #000;
     --divide_line_color: #ececec;
+    --card_border: #EEEEEE;
 }
 
 html {
@@ -412,6 +413,13 @@ ul {
 
 .card-list-item-link {
     text-decoration: none;
+}
+
+.card-list-item-text {
+    border-bottom: 1px solid var(--card_border);
+    border-left: 1px solid var(--card_border);
+    border-right: 1px solid var(--card_border);
+    padding: 20px 0 20px 24px;
 }
 
 .card-list-item-header {
