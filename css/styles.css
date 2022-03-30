@@ -347,7 +347,8 @@ ul {
 .divide-line {
     border: 1px solid var(--divide_line_color)
 }
-.portfolio {
+
+.portfolio > .container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -358,7 +359,12 @@ ul {
 
 .button-list {
     display: flex;
-    flex-direction: row;
+    margin: 0 auto 50px;
+    flex-wrap: wrap;
+}
+
+.button-list-item:not(:last-child) {
+    margin-right: 8px;
 }
 
 .button-list-item-click {
@@ -373,6 +379,7 @@ ul {
     border-radius: 4px;
     border-color: var(--port_buttons_and_team_background);
     cursor: pointer;
+    flex-basis: calc ((100% - 10px) / 2);
 }
 
 .button-list-item-click:hover,
@@ -391,8 +398,16 @@ ul {
     justify-content: space-between;
 }
 
+.card-list:not(:last-child) {
+    margin-bottom: 30px;
+}
+
 .card-list-item {
-    background-color: #EEEEEE;
+    background-color: var(--white_color);
+}
+
+.card-list-item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .card-list-item-link {
