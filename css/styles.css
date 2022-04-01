@@ -56,10 +56,6 @@ ul {
 
 .header-navigation-webstudio {
     text-decoration: none;
-
-}
-
-.header-navigation-web {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -69,12 +65,7 @@ ul {
 }
 
 .header-navigation-studio {
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.6;
     color: var(--black_color);
-    letter-spacing: 0.03em;
     
 }
 
@@ -308,9 +299,6 @@ ul {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-}
-
-.footer-web {
     color: var(--web_hover_button_color);
 }
 
