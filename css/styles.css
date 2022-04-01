@@ -46,6 +46,7 @@ ul {
 /*Header*/
 .header > .container {
     display: flex;
+    border-bottom: 1px solid var(--divide_line_color)
 }
 .header-navigation {
     display: flex;
@@ -107,7 +108,6 @@ ul {
 
 .header-contacts {
     display: flex;
-    align-items: center;
     margin-left: auto;
 }
 
@@ -133,7 +133,8 @@ ul {
 .navigation-list-item:hover,
 .navigation-list-item:focus,
 .header-contact-item:focus,
-.header-contact-item:hover {
+.header-contact-item:hover,
+.navigation-list-item.current {
     color: var(--web_hover_button_color);
 }
 
@@ -162,7 +163,7 @@ ul {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    margin: 0 auto;
+    margin: 0 auto 30px;
 }
 
 .wrapper-button {
@@ -178,7 +179,6 @@ ul {
     letter-spacing: 0.06em;
     color: var(--white_color);
     cursor: pointer;
-    margin-top: 30px;
     border: none;
 }
 
@@ -187,11 +187,6 @@ ul {
 .features{
     display: flex;
     flex-direction: column;
-}
-
-
-.features-header {
-    visibility: hidden;
 }
 
 .features-list {
@@ -226,6 +221,7 @@ ul {
 .services {
     display: flex;
     flex-direction: column;
+    padding-top: 0;;
 }
 
 .services-header {
@@ -240,6 +236,12 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.services-list-item > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /*команда*/
@@ -272,12 +274,17 @@ ul {
     border-radius: 0px 0px 4px 4px;
 }
 
+.team-list-item > div {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .team-list-item-name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
-    margin: 30px 0 10px 0;
+    margin: 10px
 }
 
 .team-list-item-position {
@@ -286,7 +293,6 @@ ul {
     line-height: 1.18;
     text-align: center;
     color: var(--mail_phone_desc);
-    padding-bottom: 30px;
 }
 
 /*footer*/
@@ -354,17 +360,10 @@ ul {
 
 /* ПОРТФОЛИО */
 /* Кнопки */
-.divide-line {
-    border: 1px solid var(--divide_line_color)
-}
-
 .portfolio > .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.button-header {
-    visibility: hidden;
 }
 
 .button-list {
@@ -377,6 +376,8 @@ ul {
 }
 
 .button-list-item-click {
+    padding: 6px 22px;
+
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
@@ -426,7 +427,7 @@ ul {
     border-bottom: 1px solid var(--card_border);
     border-left: 1px solid var(--card_border);
     border-right: 1px solid var(--card_border);
-    padding: 20px 0 20px 24px;
+    padding: 20px 24px;
 }
 
 .card-list-item-header {
