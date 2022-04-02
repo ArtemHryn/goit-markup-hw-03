@@ -85,8 +85,8 @@ ul {
 
 .navigation-list-item {
     display: block;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
     text-decoration: none;
     font-family: 'Roboto';
