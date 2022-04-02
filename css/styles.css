@@ -46,6 +46,9 @@ ul {
 /*Header*/
 .header > .container {
     display: flex;
+}
+
+.header {
     border-bottom: 1px solid var(--divide_line_color)
 }
 .header-navigation {
@@ -108,8 +111,8 @@ ul {
 
 .header-contact-item {
     display: block;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
     text-decoration: none;
     font-family: 'Roboto';
