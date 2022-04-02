@@ -173,6 +173,10 @@ ul {
     border: none;
 }
 
+.wrapper-button:hover {
+    background-color: #188CE8;
+}
+
 /*Особенности*/
 
 .features{
